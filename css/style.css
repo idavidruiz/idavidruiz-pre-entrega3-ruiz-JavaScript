@@ -126,6 +126,7 @@ body{
     z-index: 9;
     top: 12vh;
     scrollbar-color: none;
+    transition: 1s;
 }
 
 .modal-container::-webkit-scrollbar{
