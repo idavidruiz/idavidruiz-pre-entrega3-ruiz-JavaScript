@@ -4,7 +4,7 @@ const pintarCarrito = () => {
   const modalHeader = document.createElement("div");
   modalHeader.className = "modal-header";
   modalHeader.innerHTML = `
-      <h1 class="modal-header-title">Carrito</h1>
+      <h1 class="modal-header-title">Tu carrito</h1>
     `;
   modalContainer.append(modalHeader);
 
@@ -24,12 +24,14 @@ const pintarCarrito = () => {
     carritoContent.innerHTML = `
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
-        <p>${product.precio} $</p>
-        <span class="restar"> - </span>
+        <p>$ ${product.precio}</p>
+        
+        <span class="sumar"> ➕ </span>
         <p>${product.cantidad}</p>
-        <span class="sumar"> + </span>
-        <p>Total: ${product.cantidad * product.precio} $</p>
-        <span class="delete-product"> ❌ </span>
+        <span class="restar"> ➖ </span>
+       
+        <p>Total: $ ${product.cantidad * product.precio}</p>
+        <span class="delete-product">Quitar</span>
       `;
 
     modalContainer.append(carritoContent);
@@ -63,7 +65,7 @@ const pintarCarrito = () => {
 
   const totalBuying = document.createElement("div");
   totalBuying.className = "total-content";
-  totalBuying.innerHTML = `Total a pagar: ${total} $`;
+  totalBuying.innerHTML = `Total a pagar: $${total}`;
   modalContainer.append(totalBuying);
 };
 

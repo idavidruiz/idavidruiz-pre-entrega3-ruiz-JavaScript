@@ -6,6 +6,8 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+//forEach
+
 productos.forEach((product) => {
   let content = document.createElement("div");
   content.className = "card";
@@ -22,6 +24,8 @@ productos.forEach((product) => {
   comprar.className = "comprar";
 
   content.append(comprar);
+
+  //Evento
 
   comprar.addEventListener("click", function () {
       const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
@@ -52,3 +56,4 @@ productos.forEach((product) => {
 const saveLocal = () => {
   localStorage.setItem("carrito", JSON.stringify(carrito));
 };
+

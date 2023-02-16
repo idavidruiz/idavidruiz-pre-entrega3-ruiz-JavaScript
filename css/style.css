@@ -113,6 +113,7 @@ body{
 
 /* modal content*/
 .modal-container{
+    border-radius: 35px;
     width: 80%;
     margin: 0 10%;
     max-height: 84vh;
@@ -126,13 +127,20 @@ body{
     position: fixed;
     overflow: auto;
     z-index: 9;
-    top: 12vh;
+    top: 20vh;
     scrollbar-color: none;
     transition: 1s;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 .modal-container::-webkit-scrollbar{
     display: none;
+    
 }
 
 .modal-header{
@@ -141,6 +149,7 @@ body{
     background-color: rgb(255, 187, 0);
     color: white;
     width: 100%;
+    transition: 1s;
 }
 
 .modal-header-title{
@@ -176,6 +185,17 @@ body{
 /* delete button*/
 .delete-product{
     cursor: pointer;
+    background-color: rgb(175, 0, 0);
+    border-radius: 20px;
+    padding: 9px 19px;
+}
+
+.sumar, .restar{
+    margin: -30px;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
 
 /* cantidad en carrito*/
