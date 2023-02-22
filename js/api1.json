@@ -1,0 +1,17 @@
+[
+    {
+        "rango": "Técnico",
+        "name": "Gian Morales",
+        "age": 25
+    },
+    {
+        "rango": "Técnica",
+        "name": "Romina Gonzalez",
+        "age": 27
+    },
+    {
+        "rango": "Developer",
+        "name": "David Ruiz",
+        "age": 26
+    }
+]

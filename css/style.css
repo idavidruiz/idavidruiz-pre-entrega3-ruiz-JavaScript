@@ -64,7 +64,15 @@ body{
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+/* Title shop*/
 
+.shop-title{
+    display: grid;
+    place-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 /* products cards*/
 
@@ -79,6 +87,7 @@ body{
 }
 
 .card{
+    background-color: rgba(0, 0, 0, 0.082);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: 30px;
@@ -99,8 +108,9 @@ body{
 
 .card button{
     border: none;
+    border-radius: 20px;
     outline: 0;
-    padding: 12px;
+    padding: 12px 18px;
     color: white;
     background-color: black;
 }
@@ -198,6 +208,16 @@ p{
     border-radius: 20px;
 }
 
+.sumar:hover{
+    background-color: rgb(145, 145, 145);
+    transition: 0.5s;
+}
+
+.restar:hover{
+    background-color: rgb(145, 145, 145);
+    transition: 0.5s;
+}
+
 /* cantidad en carrito*/
 .cantidad-carrito{
     background-color: rgba(255, 187, 0, 0.87);
@@ -211,10 +231,13 @@ p{
     display: none;
 }
 
+
+
 footer{
     display: grid;
     place-items: center;
     background-color: rgb(0, 0, 0);
+    margin-top: 74px;
 
 }
 
@@ -233,3 +256,35 @@ footer img{
 
 /* API clientes */
 
+#api{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.api-container{
+    
+    margin-top: 70px;
+    background-image: url('https://www.pgs.sk/images/data/description/REP/asus-441872-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+
+    
+}
+
+.api-container h2{
+    display: grid;
+    place-items: center;
+    padding-top: 70px;
+    font-size: 40px;
+    color: rgba(255, 187, 0, 0.87);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.11);
+    
+}

@@ -14,14 +14,14 @@ productos.forEach((product) => {
   content.innerHTML = `
     <img src="${product.img}">
     <h3>${product.nombre}</h3>
-    <p class="price">${product.precio} $</p>
+    <p class="price">$ ${product.precio}</p>
   `;
 
   shopContent.append(content);
 
   let comprar = document.createElement("button");
-  comprar.innerText = "comprar";
-  comprar.className = "comprar";
+  comprar.innerText = "Comprar";
+  comprar.className = "Comprar";
 
   content.append(comprar);
 
